@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `MarkdownFormatter` is a Java program that reads a markdown file, formats it by adding newlines around LaTeX math expressions enclosed in double dollar signs (`$$`), and writes the formatted content to a new file.
+The `MarkdownFormatter` is a Java program that reads a markdown file, formats it by adding newlines around LaTeX math expressions enclosed in double dollar signs (`$$`), and writes the formatted content to a new file. Useful to enhance compatibility between markdown editors with inline math blocks such as Obsidian.
 
 ## Features
 

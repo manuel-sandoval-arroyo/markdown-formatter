@@ -25,9 +25,9 @@ public class MarkdownFormatter {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(fileContent);
 
-        String newFileContent = matcher.replaceAll("\\$\\$\n$1\n\\$\\$");
+        String newFileContent = matcher.replaceAll("\n\\$\\$\n$1\n\\$\\$\n");
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("./Tarea1Formatted.md"))) {
             bw.write(newFileContent);
         } catch (IOException e) {
             e.printStackTrace();

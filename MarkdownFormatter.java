@@ -7,7 +7,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 public class MarkdownFormatter {
     public static void main(String[] args) {
-        String filePath = "./Tarea1.md"; // Replace with the actual file path
+        String filePath = args[0]; // Replace with the actual file path
         StringBuilder fileContentStringBuilder = new StringBuilder();
         
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
